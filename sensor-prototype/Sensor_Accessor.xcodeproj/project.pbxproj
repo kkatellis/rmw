@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62FB7CC61539D37B003FC892 /* NSQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FB7CC41539D37B003FC892 /* NSQueue.h */; };
+		62FB7CC71539D37B003FC892 /* NSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FB7CC51539D37B003FC892 /* NSQueue.m */; };
+		A983E6291538C76F00B2E8FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A983E6281538C76F00B2E8FB /* SystemConfiguration.framework */; };
+		A983E6331538CAE300B2E8FB /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = A983E6311538CAE300B2E8FB /* Reachability.h */; };
+		A983E6341538CAE300B2E8FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A983E6321538CAE300B2E8FB /* Reachability.m */; };
+		A983E63F153E361100B2E8FB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A983E63E153E361100B2E8FB /* libsqlite3.dylib */; };
+		A98672BA152E6FC400A7772E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98672B9152E6FC400A7772E /* AudioToolbox.framework */; };
+		A98672BE152E748600A7772E /* SoundWaveProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = A98672BC152E748600A7772E /* SoundWaveProcessor.h */; };
+		A98672BF152E748600A7772E /* SoundWaveProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A98672BD152E748600A7772E /* SoundWaveProcessor.m */; };
+		A98672C1152E750500A7772E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98672C0152E750500A7772E /* AVFoundation.framework */; };
+		E0A9F81C15361C5F00C68B52 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7F115361C5F00C68B52 /* crypt.h */; };
+		E0A9F81D15361C5F00C68B52 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7F215361C5F00C68B52 /* ioapi.c */; };
+		E0A9F81E15361C5F00C68B52 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7F315361C5F00C68B52 /* ioapi.h */; };
+		E0A9F81F15361C5F00C68B52 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7F415361C5F00C68B52 /* mztools.c */; };
+		E0A9F82015361C5F00C68B52 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7F515361C5F00C68B52 /* mztools.h */; };
+		E0A9F82115361C5F00C68B52 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7F615361C5F00C68B52 /* unzip.c */; };
+		E0A9F82215361C5F00C68B52 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7F715361C5F00C68B52 /* unzip.h */; };
+		E0A9F82315361C5F00C68B52 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7F815361C5F00C68B52 /* zip.c */; };
+		E0A9F82415361C5F00C68B52 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7F915361C5F00C68B52 /* zip.h */; };
+		E0A9F82515361C5F00C68B52 /* FileInZipInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7FB15361C5F00C68B52 /* FileInZipInfo.h */; };
+		E0A9F82615361C5F00C68B52 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7FC15361C5F00C68B52 /* FileInZipInfo.m */; };
+		E0A9F82715361C5F00C68B52 /* ZipException.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7FD15361C5F00C68B52 /* ZipException.h */; };
+		E0A9F82815361C5F00C68B52 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F7FE15361C5F00C68B52 /* ZipException.m */; };
+		E0A9F82915361C5F00C68B52 /* ZipFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F7FF15361C5F00C68B52 /* ZipFile.h */; };
+		E0A9F82A15361C5F00C68B52 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80015361C5F00C68B52 /* ZipFile.m */; };
+		E0A9F82B15361C5F00C68B52 /* ZipReadStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F80115361C5F00C68B52 /* ZipReadStream.h */; };
+		E0A9F82C15361C5F00C68B52 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80215361C5F00C68B52 /* ZipReadStream.m */; };
+		E0A9F82D15361C5F00C68B52 /* ZipWriteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F80315361C5F00C68B52 /* ZipWriteStream.h */; };
+		E0A9F82E15361C5F00C68B52 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80415361C5F00C68B52 /* ZipWriteStream.m */; };
+		E0A9F82F15361C5F00C68B52 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80615361C5F00C68B52 /* adler32.c */; };
+		E0A9F83015361C5F00C68B52 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80715361C5F00C68B52 /* compress.c */; };
+		E0A9F83115361C5F00C68B52 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80815361C5F00C68B52 /* crc32.c */; };
+		E0A9F83215361C5F00C68B52 /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F80915361C5F00C68B52 /* crc32.h */; };
+		E0A9F83315361C5F00C68B52 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80A15361C5F00C68B52 /* deflate.c */; };
+		E0A9F83415361C5F00C68B52 /* deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F80B15361C5F00C68B52 /* deflate.h */; };
+		E0A9F83515361C5F00C68B52 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80C15361C5F00C68B52 /* gzio.c */; };
+		E0A9F83615361C5F00C68B52 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80D15361C5F00C68B52 /* infback.c */; };
+		E0A9F83715361C5F00C68B52 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F80E15361C5F00C68B52 /* inffast.c */; };
+		E0A9F83815361C5F00C68B52 /* inffast.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F80F15361C5F00C68B52 /* inffast.h */; };
+		E0A9F83915361C5F00C68B52 /* inffixed.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81015361C5F00C68B52 /* inffixed.h */; };
+		E0A9F83A15361C5F00C68B52 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F81115361C5F00C68B52 /* inflate.c */; };
+		E0A9F83B15361C5F00C68B52 /* inflate.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81215361C5F00C68B52 /* inflate.h */; };
+		E0A9F83C15361C5F00C68B52 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F81315361C5F00C68B52 /* inftrees.c */; };
+		E0A9F83D15361C5F00C68B52 /* inftrees.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81415361C5F00C68B52 /* inftrees.h */; };
+		E0A9F83E15361C5F00C68B52 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F81515361C5F00C68B52 /* trees.c */; };
+		E0A9F83F15361C5F00C68B52 /* trees.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81615361C5F00C68B52 /* trees.h */; };
+		E0A9F84015361C5F00C68B52 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F81715361C5F00C68B52 /* uncompr.c */; };
+		E0A9F84115361C5F00C68B52 /* zconf.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81815361C5F00C68B52 /* zconf.h */; };
+		E0A9F84215361C5F00C68B52 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81915361C5F00C68B52 /* zlib.h */; };
+		E0A9F84315361C5F00C68B52 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F81A15361C5F00C68B52 /* zutil.c */; };
+		E0A9F84415361C5F00C68B52 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F81B15361C5F00C68B52 /* zutil.h */; };
+		E0A9F8481536331800C68B52 /* DataUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A9F8461536331800C68B52 /* DataUploader.h */; };
+		E0A9F8491536331800C68B52 /* DataUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A9F8471536331800C68B52 /* DataUploader.m */; };
+		E0D65B2514ED8E3800D301D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B20C114CBCA5D005492BA /* Foundation.framework */; };
+		E0D65B3814ED904900D301D9 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99B20F714CBE1F8005492BA /* CoreLocationController.m */; };
+		E0D65B4114ED905600D301D9 /* CoreLocationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A99B20F614CBE1F7005492BA /* CoreLocationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D65B4614ED905600D301D9 /* AccelerometerProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = A93CD00414E3AC1F00A052AA /* AccelerometerProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D65B4714ED908E00D301D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B20BF14CBCA5D005492BA /* UIKit.framework */; };
+		E0D65B4814ED90A000D301D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B20C314CBCA5D005492BA /* CoreGraphics.framework */; };
+		E0D65B4A14ED90AB00D301D9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B210514CDFBDE005492BA /* CoreMotion.framework */; };
+		E0D65B4B14ED90B000D301D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B20F414CBCFA6005492BA /* CoreLocation.framework */; };
+		E0D65B5514ED972100D301D9 /* AccelerometerProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A93CD00514E3AC1F00A052AA /* AccelerometerProcessor.m */; };
+		E0D65B5614ED972A00D301D9 /* Sensor-Accesor-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E0D65B2814ED8E3800D301D9 /* Sensor-Accesor-Prefix.pch */; };
+		E0D65B5714EDD83500D301D9 /* SensorController.h in Headers */ = {isa = PBXBuildFile; fileRef = A99B20D114CBCA5D005492BA /* SensorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D65B5814EDD84400D301D9 /* SensorController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99B20D214CBCA5D005492BA /* SensorController.m */; };
+		E0F54A2115681C5E00261DB9 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F54A1F15681C5E00261DB9 /* JSONKit.h */; };
+		E0F54A2215681C5E00261DB9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F54A2015681C5E00261DB9 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62FB7CC41539D37B003FC892 /* NSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSQueue.h; sourceTree = "<group>"; };
+		62FB7CC51539D37B003FC892 /* NSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSQueue.m; sourceTree = "<group>"; };
+		A93CD00414E3AC1F00A052AA /* AccelerometerProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccelerometerProcessor.h; path = Custom/AccelerometerProcessor.h; sourceTree = "<group>"; };
+		A93CD00514E3AC1F00A052AA /* AccelerometerProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccelerometerProcessor.m; path = Custom/AccelerometerProcessor.m; sourceTree = "<group>"; };
+		A983E6281538C76F00B2E8FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A983E6311538CAE300B2E8FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		A983E6321538CAE300B2E8FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
+		A983E63E153E361100B2E8FB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A98672B9152E6FC400A7772E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A98672BC152E748600A7772E /* SoundWaveProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundWaveProcessor.h; sourceTree = "<group>"; };
+		A98672BD152E748600A7772E /* SoundWaveProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundWaveProcessor.m; sourceTree = "<group>"; };
+		A98672C0152E750500A7772E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A99B20BF14CBCA5D005492BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A99B20C114CBCA5D005492BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A99B20C314CBCA5D005492BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A99B20D114CBCA5D005492BA /* SensorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SensorController.h; path = ../Sensor_Accessor/SensorController.h; sourceTree = "<group>"; };
+		A99B20D214CBCA5D005492BA /* SensorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SensorController.m; path = ../Sensor_Accessor/SensorController.m; sourceTree = "<group>"; };
+		A99B20F414CBCFA6005492BA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A99B20F614CBE1F7005492BA /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		A99B20F714CBE1F8005492BA /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
+		A99B210514CDFBDE005492BA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E0A9F7F115361C5F00C68B52 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		E0A9F7F215361C5F00C68B52 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		E0A9F7F315361C5F00C68B52 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		E0A9F7F415361C5F00C68B52 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		E0A9F7F515361C5F00C68B52 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		E0A9F7F615361C5F00C68B52 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		E0A9F7F715361C5F00C68B52 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		E0A9F7F815361C5F00C68B52 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		E0A9F7F915361C5F00C68B52 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		E0A9F7FB15361C5F00C68B52 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		E0A9F7FC15361C5F00C68B52 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
+		E0A9F7FD15361C5F00C68B52 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		E0A9F7FE15361C5F00C68B52 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
+		E0A9F7FF15361C5F00C68B52 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		E0A9F80015361C5F00C68B52 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
+		E0A9F80115361C5F00C68B52 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		E0A9F80215361C5F00C68B52 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
+		E0A9F80315361C5F00C68B52 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		E0A9F80415361C5F00C68B52 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
+		E0A9F80615361C5F00C68B52 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		E0A9F80715361C5F00C68B52 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		E0A9F80815361C5F00C68B52 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		E0A9F80915361C5F00C68B52 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		E0A9F80A15361C5F00C68B52 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		E0A9F80B15361C5F00C68B52 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		E0A9F80C15361C5F00C68B52 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
+		E0A9F80D15361C5F00C68B52 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		E0A9F80E15361C5F00C68B52 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		E0A9F80F15361C5F00C68B52 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		E0A9F81015361C5F00C68B52 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		E0A9F81115361C5F00C68B52 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		E0A9F81215361C5F00C68B52 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		E0A9F81315361C5F00C68B52 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		E0A9F81415361C5F00C68B52 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		E0A9F81515361C5F00C68B52 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		E0A9F81615361C5F00C68B52 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		E0A9F81715361C5F00C68B52 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		E0A9F81815361C5F00C68B52 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		E0A9F81915361C5F00C68B52 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		E0A9F81A15361C5F00C68B52 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		E0A9F81B15361C5F00C68B52 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		E0A9F8461536331800C68B52 /* DataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataUploader.h; path = Sensor_Accessor/DataUploader.h; sourceTree = SOURCE_ROOT; };
+		E0A9F8471536331800C68B52 /* DataUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataUploader.m; path = Sensor_Accessor/DataUploader.m; sourceTree = SOURCE_ROOT; };
+		E0D65B2414ED8E3800D301D9 /* libSensor-Accesor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSensor-Accesor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D65B2814ED8E3800D301D9 /* Sensor-Accesor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sensor-Accesor-Prefix.pch"; sourceTree = "<group>"; };
+		E0F54A1F15681C5E00261DB9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		E0F54A2015681C5E00261DB9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0D65B2114ED8E3800D301D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983E63F153E361100B2E8FB /* libsqlite3.dylib in Frameworks */,
+				A983E6291538C76F00B2E8FB /* SystemConfiguration.framework in Frameworks */,
+				A98672C1152E750500A7772E /* AVFoundation.framework in Frameworks */,
+				A98672BA152E6FC400A7772E /* AudioToolbox.framework in Frameworks */,
+				E0D65B4B14ED90B000D301D9 /* CoreLocation.framework in Frameworks */,
+				E0D65B4A14ED90AB00D301D9 /* CoreMotion.framework in Frameworks */,
+				E0D65B4814ED90A000D301D9 /* CoreGraphics.framework in Frameworks */,
+				E0D65B4714ED908E00D301D9 /* UIKit.framework in Frameworks */,
+				E0D65B2514ED8E3800D301D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A983E62B1538C81C00B2E8FB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A983E6311538CAE300B2E8FB /* Reachability.h */,
+				A983E6321538CAE300B2E8FB /* Reachability.m */,
+			);
+			name = Reachability;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A983E63C153A221900B2E8FB /* NSQueue */ = {
+			isa = PBXGroup;
+			children = (
+				62FB7CC41539D37B003FC892 /* NSQueue.h */,
+				62FB7CC51539D37B003FC892 /* NSQueue.m */,
+			);
+			name = NSQueue;
+			sourceTree = "<group>";
+		};
+		A99B20B014CBCA5C005492BA = {
+			isa = PBXGroup;
+			children = (
+				E0D65B2614ED8E3800D301D9 /* Sensor-Accesor */,
+				A99B20BE14CBCA5D005492BA /* Frameworks */,
+				A99B20BC14CBCA5D005492BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A99B20BC14CBCA5D005492BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0D65B2414ED8E3800D301D9 /* libSensor-Accesor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99B20BE14CBCA5D005492BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A983E63E153E361100B2E8FB /* libsqlite3.dylib */,
+				A983E6281538C76F00B2E8FB /* SystemConfiguration.framework */,
+				A98672C0152E750500A7772E /* AVFoundation.framework */,
+				A98672B9152E6FC400A7772E /* AudioToolbox.framework */,
+				A99B210514CDFBDE005492BA /* CoreMotion.framework */,
+				A99B20F414CBCFA6005492BA /* CoreLocation.framework */,
+				A99B20BF14CBCA5D005492BA /* UIKit.framework */,
+				A99B20C114CBCA5D005492BA /* Foundation.framework */,
+				A99B20C314CBCA5D005492BA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0A9F7F015361C5F00C68B52 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9F7F115361C5F00C68B52 /* crypt.h */,
+				E0A9F7F215361C5F00C68B52 /* ioapi.c */,
+				E0A9F7F315361C5F00C68B52 /* ioapi.h */,
+				E0A9F7F415361C5F00C68B52 /* mztools.c */,
+				E0A9F7F515361C5F00C68B52 /* mztools.h */,
+				E0A9F7F615361C5F00C68B52 /* unzip.c */,
+				E0A9F7F715361C5F00C68B52 /* unzip.h */,
+				E0A9F7F815361C5F00C68B52 /* zip.c */,
+				E0A9F7F915361C5F00C68B52 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = SOURCE_ROOT;
+		};
+		E0A9F7FA15361C5F00C68B52 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9F7FB15361C5F00C68B52 /* FileInZipInfo.h */,
+				E0A9F7FC15361C5F00C68B52 /* FileInZipInfo.m */,
+				E0A9F7FD15361C5F00C68B52 /* ZipException.h */,
+				E0A9F7FE15361C5F00C68B52 /* ZipException.m */,
+				E0A9F7FF15361C5F00C68B52 /* ZipFile.h */,
+				E0A9F80015361C5F00C68B52 /* ZipFile.m */,
+				E0A9F80115361C5F00C68B52 /* ZipReadStream.h */,
+				E0A9F80215361C5F00C68B52 /* ZipReadStream.m */,
+				E0A9F80315361C5F00C68B52 /* ZipWriteStream.h */,
+				E0A9F80415361C5F00C68B52 /* ZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = SOURCE_ROOT;
+		};
+		E0A9F80515361C5F00C68B52 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9F80615361C5F00C68B52 /* adler32.c */,
+				E0A9F80715361C5F00C68B52 /* compress.c */,
+				E0A9F80815361C5F00C68B52 /* crc32.c */,
+				E0A9F80915361C5F00C68B52 /* crc32.h */,
+				E0A9F80A15361C5F00C68B52 /* deflate.c */,
+				E0A9F80B15361C5F00C68B52 /* deflate.h */,
+				E0A9F80C15361C5F00C68B52 /* gzio.c */,
+				E0A9F80D15361C5F00C68B52 /* infback.c */,
+				E0A9F80E15361C5F00C68B52 /* inffast.c */,
+				E0A9F80F15361C5F00C68B52 /* inffast.h */,
+				E0A9F81015361C5F00C68B52 /* inffixed.h */,
+				E0A9F81115361C5F00C68B52 /* inflate.c */,
+				E0A9F81215361C5F00C68B52 /* inflate.h */,
+				E0A9F81315361C5F00C68B52 /* inftrees.c */,
+				E0A9F81415361C5F00C68B52 /* inftrees.h */,
+				E0A9F81515361C5F00C68B52 /* trees.c */,
+				E0A9F81615361C5F00C68B52 /* trees.h */,
+				E0A9F81715361C5F00C68B52 /* uncompr.c */,
+				E0A9F81815361C5F00C68B52 /* zconf.h */,
+				E0A9F81915361C5F00C68B52 /* zlib.h */,
+				E0A9F81A15361C5F00C68B52 /* zutil.c */,
+				E0A9F81B15361C5F00C68B52 /* zutil.h */,
+			);
+			path = ZLib;
+			sourceTree = SOURCE_ROOT;
+		};
+		E0D65B2614ED8E3800D301D9 /* Sensor-Accesor */ = {
+			isa = PBXGroup;
+			children = (
+				A99B20D114CBCA5D005492BA /* SensorController.h */,
+				A99B20D214CBCA5D005492BA /* SensorController.m */,
+				E0DDF57D14E2297C007D432B /* Sensor Handlers */,
+				E0D65B2714ED8E3800D301D9 /* Supporting Files */,
+			);
+			path = "Sensor-Accesor";
+			sourceTree = "<group>";
+		};
+		E0D65B2714ED8E3800D301D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0F54A1E15681C5E00261DB9 /* JSONKit */,
+				A983E63C153A221900B2E8FB /* NSQueue */,
+				A983E62B1538C81C00B2E8FB /* Reachability */,
+				E0A9F7F015361C5F00C68B52 /* MiniZip */,
+				E0A9F7FA15361C5F00C68B52 /* Objective-Zip */,
+				E0A9F80515361C5F00C68B52 /* ZLib */,
+				E0D65B2814ED8E3800D301D9 /* Sensor-Accesor-Prefix.pch */,
+				E0A9F8461536331800C68B52 /* DataUploader.h */,
+				E0A9F8471536331800C68B52 /* DataUploader.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0DDF57D14E2297C007D432B /* Sensor Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				A99B20F614CBE1F7005492BA /* CoreLocationController.h */,
+				A99B20F714CBE1F8005492BA /* CoreLocationController.m */,
+				A93CD00414E3AC1F00A052AA /* AccelerometerProcessor.h */,
+				A93CD00514E3AC1F00A052AA /* AccelerometerProcessor.m */,
+				A98672BC152E748600A7772E /* SoundWaveProcessor.h */,
+				A98672BD152E748600A7772E /* SoundWaveProcessor.m */,
+			);
+			name = "Sensor Handlers";
+			path = ../Sensor_Accessor;
+			sourceTree = "<group>";
+		};
+		E0F54A1E15681C5E00261DB9 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				E0F54A1F15681C5E00261DB9 /* JSONKit.h */,
+				E0F54A2015681C5E00261DB9 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E0D65B2214ED8E3800D301D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D65B5714EDD83500D301D9 /* SensorController.h in Headers */,
+				E0D65B4114ED905600D301D9 /* CoreLocationController.h in Headers */,
+				E0D65B4614ED905600D301D9 /* AccelerometerProcessor.h in Headers */,
+				E0D65B5614ED972A00D301D9 /* Sensor-Accesor-Prefix.pch in Headers */,
+				A98672BE152E748600A7772E /* SoundWaveProcessor.h in Headers */,
+				E0A9F81C15361C5F00C68B52 /* crypt.h in Headers */,
+				E0A9F81E15361C5F00C68B52 /* ioapi.h in Headers */,
+				E0A9F82015361C5F00C68B52 /* mztools.h in Headers */,
+				E0A9F82215361C5F00C68B52 /* unzip.h in Headers */,
+				E0A9F82415361C5F00C68B52 /* zip.h in Headers */,
+				E0A9F82515361C5F00C68B52 /* FileInZipInfo.h in Headers */,
+				E0A9F82715361C5F00C68B52 /* ZipException.h in Headers */,
+				E0A9F82915361C5F00C68B52 /* ZipFile.h in Headers */,
+				E0A9F82B15361C5F00C68B52 /* ZipReadStream.h in Headers */,
+				E0A9F82D15361C5F00C68B52 /* ZipWriteStream.h in Headers */,
+				E0A9F83215361C5F00C68B52 /* crc32.h in Headers */,
+				E0A9F83415361C5F00C68B52 /* deflate.h in Headers */,
+				E0A9F83815361C5F00C68B52 /* inffast.h in Headers */,
+				E0A9F83915361C5F00C68B52 /* inffixed.h in Headers */,
+				E0A9F83B15361C5F00C68B52 /* inflate.h in Headers */,
+				E0A9F83D15361C5F00C68B52 /* inftrees.h in Headers */,
+				E0A9F83F15361C5F00C68B52 /* trees.h in Headers */,
+				E0A9F84115361C5F00C68B52 /* zconf.h in Headers */,
+				E0A9F84215361C5F00C68B52 /* zlib.h in Headers */,
+				E0A9F84415361C5F00C68B52 /* zutil.h in Headers */,
+				E0A9F8481536331800C68B52 /* DataUploader.h in Headers */,
+				A983E6331538CAE300B2E8FB /* Reachability.h in Headers */,
+				62FB7CC61539D37B003FC892 /* NSQueue.h in Headers */,
+				E0F54A2115681C5E00261DB9 /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E0D65B2314ED8E3800D301D9 /* Sensor-Accesor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D65B2E14ED8E3800D301D9 /* Build configuration list for PBXNativeTarget "Sensor-Accesor" */;
+			buildPhases = (
+				E0D65B2214ED8E3800D301D9 /* Headers */,
+				E0D65B2014ED8E3800D301D9 /* Sources */,
+				E0D65B2114ED8E3800D301D9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sensor-Accesor";
+			productName = "Sensor-Accesor";
+			productReference = E0D65B2414ED8E3800D301D9 /* libSensor-Accesor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99B20B214CBCA5C005492BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A99B20B514CBCA5C005492BA /* Build configuration list for PBXProject "Sensor_Accessor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A99B20B014CBCA5C005492BA;
+			productRefGroup = A99B20BC14CBCA5D005492BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0D65B2314ED8E3800D301D9 /* Sensor-Accesor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0D65B2014ED8E3800D301D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D65B3814ED904900D301D9 /* CoreLocationController.m in Sources */,
+				E0D65B5814EDD84400D301D9 /* SensorController.m in Sources */,
+				E0D65B5514ED972100D301D9 /* AccelerometerProcessor.m in Sources */,
+				A98672BF152E748600A7772E /* SoundWaveProcessor.m in Sources */,
+				E0A9F81D15361C5F00C68B52 /* ioapi.c in Sources */,
+				E0A9F81F15361C5F00C68B52 /* mztools.c in Sources */,
+				E0A9F82115361C5F00C68B52 /* unzip.c in Sources */,
+				E0A9F82315361C5F00C68B52 /* zip.c in Sources */,
+				E0A9F82615361C5F00C68B52 /* FileInZipInfo.m in Sources */,
+				E0A9F82815361C5F00C68B52 /* ZipException.m in Sources */,
+				E0A9F82A15361C5F00C68B52 /* ZipFile.m in Sources */,
+				E0A9F82C15361C5F00C68B52 /* ZipReadStream.m in Sources */,
+				E0A9F82E15361C5F00C68B52 /* ZipWriteStream.m in Sources */,
+				E0A9F82F15361C5F00C68B52 /* adler32.c in Sources */,
+				E0A9F83015361C5F00C68B52 /* compress.c in Sources */,
+				E0A9F83115361C5F00C68B52 /* crc32.c in Sources */,
+				E0A9F83315361C5F00C68B52 /* deflate.c in Sources */,
+				E0A9F83515361C5F00C68B52 /* gzio.c in Sources */,
+				E0A9F83615361C5F00C68B52 /* infback.c in Sources */,
+				E0A9F83715361C5F00C68B52 /* inffast.c in Sources */,
+				E0A9F83A15361C5F00C68B52 /* inflate.c in Sources */,
+				E0A9F83C15361C5F00C68B52 /* inftrees.c in Sources */,
+				E0A9F83E15361C5F00C68B52 /* trees.c in Sources */,
+				E0A9F84015361C5F00C68B52 /* uncompr.c in Sources */,
+				E0A9F84315361C5F00C68B52 /* zutil.c in Sources */,
+				E0A9F8491536331800C68B52 /* DataUploader.m in Sources */,
+				A983E6341538CAE300B2E8FB /* Reachability.m in Sources */,
+				62FB7CC71539D37B003FC892 /* NSQueue.m in Sources */,
+				E0F54A2215681C5E00261DB9 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A99B20EC14CBCA5D005492BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
+				SYMROOT = build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A99B20ED14CBCA5D005492BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
+				SYMROOT = build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0D65B2C14ED8E3800D301D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Sensor_Accesor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensor-Accesor/Sensor-Accesor-Prefix.pch";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				SYMROOT = build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0D65B2D14ED8E3800D301D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /tmp/Sensor_Accesor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensor-Accesor/Sensor-Accesor-Prefix.pch";
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				SYMROOT = build;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A99B20B514CBCA5C005492BA /* Build configuration list for PBXProject "Sensor_Accessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99B20EC14CBCA5D005492BA /* Debug */,
+				A99B20ED14CBCA5D005492BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D65B2E14ED8E3800D301D9 /* Build configuration list for PBXNativeTarget "Sensor-Accesor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D65B2C14ED8E3800D301D9 /* Debug */,
+				E0D65B2D14ED8E3800D301D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A99B20B214CBCA5C005492BA /* Project object */;
+}

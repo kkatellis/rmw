@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>476127B3-8AC0-433F-AF1C-5260BF5DC4A8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>rockmyworld</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5CDE0CC9-E35E-4BD9-9CA8-26AF34203371</key>
+		<string>https://github.com/a5huynh/rockmyworld.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/rockmyworld.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5CDE0CC9-E35E-4BD9-9CA8-26AF34203371</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/a5huynh/rockmyworld.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5CDE0CC9-E35E-4BD9-9CA8-26AF34203371</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5CDE0CC9-E35E-4BD9-9CA8-26AF34203371</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rockmyworld</string>
+		</dict>
+	</array>
+</dict>
+</plist>
